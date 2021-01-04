@@ -1,0 +1,170 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	background-color: rgb(255, 255, 255);
+}
+
+header {
+	background-image: url('https://i.ccdn.cz/acm/16/593407/l0.jpg');
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - 63px);	
+	
+}
+
+header * {
+	z-index: 1;
+}
+
+
+header::after {
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+header h1 {
+	color: #fff;
+	font-size: 60px;
+	text-align: center;
+	width: 60%;
+}
+
+
+nav {
+	background-color: rgb(2, 4, 139);
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 15px;
+}
+
+nav p {
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	margin: 5px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+
+ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul li {
+	margin: 0 10px;
+}
+
+ul li a {
+	color: rgb(255, 255, 255);
+	position: relative;
+	text-decoration: none;
+}
+.contenedor-izquierda {
+    padding: 20px 0;
+    width: 85%;
+    max-width: 1500px;
+    margin: auto;
+	overflow: hidden;
+	
+}
+
+
+.contenedor-sobre-nosotros{
+    display: flex;
+	justify-content: space-evenly;
+	
+}
+.imagen-about-us-centrado{
+	width: 100%;
+	height: 65%;
+	
+
+
+}
+.imagen-about-us{
+    width: 45%;
+}
+.imagen-about-us-segundo{
+    width: 50%;
+}
+.sobre-nosotros .contenido-textos{
+    width: 88%;
+}
+.contenido-textos p{
+    padding: 20px 5px 35px 90px;
+    font-weight: 300;
+    
+}
+.contenido-textos-izquierda p{
+    padding: 20px 60px 65px 20px;
+    font-weight: 300;
+    background-color: crimson;
+}
+.contenido-textos-izquierda h2{
+	padding: 0px 0px 0px 20px;
+}
+.contenido-textos h2{
+	padding: 0px 60px 0px 90px;
+}
+.contenedor-footer{
+	flex-direction: column;
+	border: none;
+	background-color: antiquewhite;
+}
+.content-foo{
+	margin-bottom: 8px;
+	text-align: center;
+}
+.content-foo p{
+	color: rgb(22, 22, 22);
+	border-bottom: 5px solid #f2f2f2;
+	padding-bottom: 0px;
+}
+.cuadrado{
+	padding:5px;
+	margin:35px;
+
+background-color: #1b25af;
+	color: white;
+	width: 50%;
+	height: 80%;
+}
+.imagen-about-us-encima-texto{
+	position:absolute;
+	height:20%;
+	width:40%;
+	top: 30%;
+	left : 55%;
+	z-index: 1;
+	color: rgb(0, 0, 0);
+}
+.imagen-about-us-encima-info{
+	position:absolute;
+	height:30%;
+	width:45%;
+	top: 31%;
+	left : 5%;
+	z-index: 1;
+	color: rgb(0, 0, 0);
+	background-color: #a3a3a3;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body >
+	<h:form >
+		<p:panel id="panel" header="Nueva Persona"  >
+			<h:panelGrid columns="3" cellpadding="5" width="600">
+			
+			
+				<p:outputLabel for="firstname" value="Nombre:" />
+				<p:inputText validatorMessage="Ingrese un nombre" requiredMessage="Campo obligatorio" id="firstname" value="#{persona.nombre}"
+					required="true" label="Firstname">
+					<f:validateLength minimum="2" />
+				</p:inputText>
+				<p:message for="firstname" display="icon,text" />
+
+				<p:outputLabel for="edad" value="Edad:" />
+				<p:inputText  validatorMessage="Edad menor a 18" requiredMessage="Campo obligatorio" id="edad" value="#{persona.edad}" required="true"
+					label="edad">
+					<f:validateLength minimum="2" />
+					<f:validateLongRange minimum="18" maximum="100" />
+					<p:ajax update="msgedad" event="keyup" />
+				</p:inputText>
+				<p:message id="msgedad" for="edad" display="icon,text" />
+				
+				<p:outputLabel for="estado_civil" value="Estado Civil:" />
+				<p:selectOneMenu  	requiredMessage="Seleccionar un estado" id="estado_civil" value="#{persona.estado_civil}" required="true">
+				 <f:selectItem itemValue="Soltero" itemLabel="Soltero"/>
+				 <f:selectItem itemValue="Casado" itemLabel="Casado"/>
+				 <f:selectItem itemValue="Divorciado" itemLabel="Divorciado"/>
+				 <f:selectItem itemValue="Viudo" itemLabel="Viudo"/>
+				 <f:selectItem itemValue="No especificar" itemLabel="No especificar"/>
+				 <p:ajax update="msgestado_civil" />
+				</p:selectOneMenu>
+				<p:message id="msgestado_civil" for="estado_civil" display="icon,text" />
+
+				<p:outputLabel for="correo" value="Email:" />
+				<p:inputText  validatorMessage="Se debe ingresar un correo" requiredMessage="Campo obligatorio" id="correo" value="#{persona.correo}" required="true"
+					label="correo"   >
+					<f:validateLength minimum="2" />
+					<f:validateRegex pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+					<p:ajax update="msgcorreo"/>
+				</p:inputText>
+				<p:message id="msgcorreo" for="correo" display="icon,text" />
+				
+
+				<p:outputLabel for="direccion" value="Direccion:" />
+				<p:inputText validatorMessage="Se debe ingresar una direccion"
+					requiredMessage="Campo obligatorio" id="direccion"
+					value="#{persona.direccion}" required="true" label="direccion">
+					<f:validateLength minimum="2" />
+				</p:inputText>
+				<p:message for="direccion" display="icon,text" />
+
+				<p:outputLabel for="password" value="Password:" />
+				<p:inputText validatorMessage="Ingresar 2 numeros y 6 caracteres" requiredMessage="Campo obligatorio" id="password" value="#{persona.clave}" required="true"
+					label="password">
+					<f:validateLength minimum="2" />
+					<f:validateRegex pattern="[0-9]{2}[a-z]{6}"/>
+					<p:ajax update="msgpassword"/>
+				</p:inputText>
+				<p:message id="msgpassword" for="password" display="icon,text" />
+
+
+
+				
+				<p:outputLabel for="ciudad" value="Ciudad:" />	
+				<p:selectOneRadio validatorMessage="Seleccione uno" requiredMessage="Campo obligatorio" id="ciudad" value="#{persona.ciudad}" required="true" >
+				   	<f:selectItem itemValue="Manta" itemLabel="Manta" />
+				   	<f:selectItem itemValue="Guayaquill" itemLabel="Guayaquil" />
+				   	<f:selectItem itemValue="Quito" itemLabel="Quito" />
+				   	<f:selectItem itemValue="Otro" itemLabel="Otro" />
+				   	<p:ajax update="msgciudad" />
+				</p:selectOneRadio>
+				<p:message for="ciudad" id="msgciudad" display="icon,text" />
+				
+				
+				
+				
+				<p:outputLabel for="pasatiempos" value="Pasatiempos:" />	
+				<p:selectManyCheckbox validatorMessage="Seleccione uno" requiredMessage="Campo obligatorio" id="pasatiempos" value="#{persona.pasatiempos}"  required="true">
+			     <f:selectItem itemValue="Jugar Videojuegos" itemLabel="Jugar Videojuegos" />
+			     <f:selectItem itemValue="Ciclismo" itemLabel="Ciclismo" />
+			     <f:selectItem itemValue="Dormir" itemLabel="Dormir" />
+			     <f:selectItem itemValue="Dibujar" itemLabel="Dibujar" />
+			     <p:ajax update="msgpasatiempos" />
+				</p:selectManyCheckbox>
+				<p:message for="pasatiempos" id="msgpasatiempos" display="icon,text" />
+				
+				
+
+				
+				
+			</h:panelGrid>
+			<p:commandButton value="Save" update="panel"
+				action="#{persona.registrar}" icon="pi pi-check" />
+		</p:panel>
+	</h:form>
+</h:body>
+</html>

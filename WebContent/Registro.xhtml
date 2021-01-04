@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+<link rel="stylesheet" href="cssregistrar/estilosregistrar.css">
+</link>
+</h:head>
+
+
+<h:body>
+<main>
+            <nav>
+                <p>Informacion</p>
+                <ul>
+                    <li><a href="Informacion.xhtml">Informacion</a></li>
+                    <li><a href="Tablas.xhtml">Tabla de valores</a></li>
+                    <li><a href="Mineria.xhtml">Mineria</a></li>
+                    <li><a href="">Mision y Vision</a></li>
+                    <li><a href="Login.xhtml">Inicio de sesion</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="Registro.xhtml">Registro</a></li>
+                </ul>
+            </nav>            
+        </main>
+        <section class="contenedor-izquierda sobre-nosotros">
+            <div class="contenedor-sobre-nosotros">
+                <div class="contenido-textos-izquierda">
+                <h2>Registrar nuevo usuario</h2>
+            	</div>
+            </div>
+        </section>
+        <div class="cuadrado">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+
+        </div>
+        <div>
+            <h2 class="imagen-about-us-encima-texto">
+                Puedes registrarte en nuestra web para poder asi obtener los siguientes beneficios como lo son:
+                calculadoras de factibilidad, informacion mas detallada sobre las transacciones que se han venido haciendo
+                en el comercio de criptomonedas
+            </h2>
+          </div>
+          
+      <div class="imagen-about-us-encima-info">
+		<h:form>
+			<p:panel id="panel" header="Nueva Usuario">
+				<h:panelGrid columns="3" cellpadding="5">
+
+
+					<p:outputLabel for="firstname" value="Nombre:" />
+					<p:inputText validatorMessage="Ingrese un nombre"
+						requiredMessage="Campo obligatorio" id="firstname"
+						value="#{persona.nombre}" required="true" label="Firstname">
+						<f:validateLength minimum="2" />
+					</p:inputText>
+					<p:message for="firstname" display="icon,text" />
+
+					<p:outputLabel for="Secondname" value="Apellido:" />
+					<p:inputText validatorMessage="Ingrese su apellido"
+						requiredMessage="Campo obligatorio" id="Secondname"
+						value="#{persona.apellido}" required="true" label="Secondname">
+						<f:validateLength minimum="2" />
+					</p:inputText>
+					<p:message for="Secondname" display="icon,text" />
+
+					<p:outputLabel for="edad" value="Edad:" />
+					<p:inputText validatorMessage="Edad menor a 18"
+						requiredMessage="Campo obligatorio" id="edad"
+						value="#{persona.edad}" required="true" label="edad">
+						<f:validateLength minimum="2" />
+						<f:validateLongRange minimum="18" maximum="100" />
+						<p:ajax update="msgedad" event="keyup" />
+					</p:inputText>
+					<p:message id="msgedad" for="edad" display="icon,text" />
+					
+					<p:outputLabel for="direccion" value="Pais:" />
+					<p:inputText validatorMessage="Se debe ingresar su pais"
+						requiredMessage="Campo obligatorio" id="direccion"
+						value="#{persona.direccion}" required="true" label="direccion">
+						<f:validateLength minimum="2" />
+					</p:inputText>
+					<p:message for="direccion" display="icon,text" />
+
+					<p:outputLabel for="correo" value="Email:" />
+					<p:inputText validatorMessage="Se debe ingresar un correo"
+						requiredMessage="Campo obligatorio" id="correo"
+						value="#{persona.correo}" required="true" label="correo">
+						<f:validateLength minimum="2" />
+						<f:validateRegex
+							pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+						<p:ajax update="msgcorreo" />
+					</p:inputText>
+					<p:message id="msgcorreo" for="correo" display="icon,text" />
+
+
+
+					<p:outputLabel for="password" value="Password:" />
+					<p:inputText validatorMessage="Ingresar 2 numeros y 6 caracteres"
+						requiredMessage="Campo obligatorio" id="password"
+						value="#{persona.clave}" required="true" label="password">
+						<f:validateLength minimum="2" />
+						<f:validateRegex pattern="[0-9]{2}[a-z]{6}" />
+						<p:ajax update="msgpassword" />
+					</p:inputText>
+					<p:message id="msgpassword" for="password" display="icon,text" />
+
+				</h:panelGrid>
+				<p:commandButton value="Registrar" update="panel"
+					action="#{persona.registrar}" icon="pi pi-check" />
+			</p:panel>
+		</h:form>
+	</div>
+          
+        <footer>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4>Universidad Politecnica Salesiana - Ecuador</h4>
+                    <p>Pagina creada por Estudiantes de </p>
+                    <p>Ingenieria en ciencias de la computacion </p>
+                    <p>2020</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+
+</h:body>
+
+</html>
