@@ -5,7 +5,7 @@ utilidades para minar por cuenta propia e informacion acerca de las criptomoneda
 usando computadores y trarjetas de video que se dospongan. Tambien se puede visualizar graficos de las monedas
 mas populares, sus valores a lo largo del tiempo y el valor que tienen.
 
-Comenzando 🚀
+Comenzando 🚀 </br>
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 Mira Deployment para conocer como desplegar el proyecto.
