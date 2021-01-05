@@ -10,18 +10,18 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 Mira Deployment para conocer como desplegar el proyecto.
 
-Pre-requisitos 📋
-Computador
-Conexión a internet
+Pre-requisitos 📋</br>
+Computador</br>
+Conexión a internet</br>
 Navegador Chrome, Edge, Opera o Firefox
 
 Instalación 🔧
 No es necesario instalar nada ya que es una aplicación web.
 
-Ejecutando las pruebas ⚙️
+Ejecutando las pruebas ⚙️</br>
 Explica como ejecutar las pruebas automatizadas para este sistema
 
-Analice las pruebas end-to-end 🔩
+Analice las pruebas end-to-end 🔩</br>
 Explica que verifican estas pruebas y por qué
 
 Da un ejemplo
@@ -32,27 +32,24 @@ Da un ejemplo
 Despliegue 📦
 Agrega notas adicionales sobre como hacer deploy
 
-Construido con 🛠️
-Eclipse IDE 2020
-Wildfly 12
-Primefaces 8.0
-CSS
-XHTML
+Construido con 🛠️</br>
+Eclipse IDE 2020</br>
+Wildfly 12</br>
+Primefaces 8.0</br>
+CSS</br>
+XHTML</br>
 
-Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-Versionado 📌
+Versionado 📌</br>
 1.0
 
-Autores ✒️
-Chacon Bryan - (Trabajo realizado)
-Morales Paul - (Trabajo realizado)
-Romo Joel - (Trabajo realizado)
-Valencia Leyton - (Trabajo realizado)
-También puedes mirar la lista de todos los contribuyentes quíenes han participado en este proyecto.
+Autores ✒️</br>
+Chacon Bryan - (Trabajo realizado)</br>
+Morales Paul - (Trabajo realizado)</br>
+Romo Joel - (Trabajo realizado)</br>
+Valencia Leyton - (Trabajo realizado)</br>
 
-Licencia 📄
+Licencia 📄</br>
 Este proyecto está bajo la Licencia (Eclipse libre) - mira el archivo LICENSE.md para detalles
 
-Expresiones de Gratitud 🎁
+Expresiones de Gratitud 🎁</br>
 Agradezco a los chinos por crear el virus, gracias por fregarnos la existencia, economía y salud c:
