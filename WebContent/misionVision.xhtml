@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
 <h:head>
 <link rel="stylesheet" href="css/estilos.css">
@@ -14,19 +15,21 @@
 
 <h:body>
         <main>
-            <nav>
-                <p>Criptomonedas</p>
-                <ul>
-                    <li><a href="Informacion.xhtml">Informacion</a></li>
-                    <li><a href="Tablas.xhtml">Tabla de valores</a></li>
-                    <li><a href="Mineria.xhtml">Mineria</a></li>
-                    <li><a href="">Mision y Vision</a></li>
-                    <li><a href="Login.xhtml">Inicio de sesion</a></li>
-                    <li><a href="">Sobre nosotros</a></li>
-                    <li><a href="Registro.xhtml">Registro</a></li>
-                </ul>
-            </nav>
+     <div>
+     <p:breadCrumb  style="position: absolute; width:100%; height: 50px;" >
+		<p:menuitem value="Inicio" url="index.xhtml" />
+		<p:menuitem value="Informacion" url="Informacion.xhtml" />
+		<p:menuitem value="Tablas de valores" url="Tablas.xhtml" />
+		<p:menuitem value="Mineria" url="Mineria.xhtml" />
+		<p:menuitem value="Mision y Vision" url="misionVision.xhtml" />
+		<p:menuitem value="Inicio de sesion" url="Login.xhtml" />
+		<p:menuitem value="Registrar" url="Registro.xhtml" />
+		<p:menuitem value="Sobre nosotros" url="#" />
+	</p:breadCrumb>
+	</div>
         </main>
+                    <br />
+					<br />
          <section class="contenedor-izquierda sobre-nosotros">
             <div class="contenedor-sobre-nosotros">
                 <div class="contenido-textos">
@@ -40,7 +43,9 @@
                         en su uso y mineria de bitcoins.
                     </p>
                 </div>
-               	<img src="images/mision.jpg" class="imagen-about-us">
+		<br /> 
+		<br /> 
+		<img src="images/mision.jpg" class="imagen-about-us">
                 </img>
             </div>
         </section>

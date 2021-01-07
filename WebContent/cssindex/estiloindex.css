@@ -118,3 +118,16 @@ ul li a {
         border-bottom: 1px solid #f2f2f2;
         padding-bottom: 0px;
 }
+.imagen-about-us-encima-info{
+	position:absolute;
+	height:30%;
+	width:35%;
+	top: 37%;
+	left : 33%;
+	z-index: 1;
+	color: rgb(0, 0, 0);
+}
+.menu-prime{
+	position: absolute;
+	height: 200px;
+}
