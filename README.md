@@ -8,8 +8,6 @@ mas populares, sus valores a lo largo del tiempo y el valor que tienen.
 * Comenzando 🚀 </br>
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-Mira Deployment para conocer como desplegar el proyecto.
-
 * Pre-requisitos 📋</br>
 Computador</br>
 Conexión a internet</br>
@@ -23,14 +21,6 @@ Explica como ejecutar las pruebas automatizadas para este sistema
 
 * Puedes revisar la wiki [Wiki](https://github.com/bstevechc/Proyecto-Integrador-5to/wiki) del proyecto
 
-Da un ejemplo
-Y las pruebas de estilo de codificación ⌨️
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
-Despliegue 📦
-Agrega notas adicionales sobre como hacer deploy
-
 * Construido con 🛠️</br>
 Eclipse IDE 2020</br>
 Wildfly 12</br>
@@ -41,7 +31,7 @@ XHTML</br>
 * Versionado 📌</br>
 1.0
 
-Autores ✒️</br>
+* Autores ✒️</br>
 Chacon Bryan - (Trabajo realizado)</br>
 Morales Paul - (Trabajo realizado)</br>
 Romo Joel - (Trabajo realizado)</br>
